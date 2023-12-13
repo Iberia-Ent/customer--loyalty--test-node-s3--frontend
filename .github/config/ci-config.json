@@ -1,0 +1,37 @@
+{
+	"ci": {
+		"AWS_ECR_IMAGE_BASE": "NA",
+		"AWS_ECR_REGISTRY": "NA",
+		"AWS_ECR_REPOSITORY_NAME": "NA",
+		"AWS_REGION": "eu-west-1",
+		"AWS_RESOURCES_COMMON_ACCOUNT_ID": "329066851743",
+		"AWS_RESOURCES_COMMON_DOMAIN": "iberia",
+		"AWS_RESOURCES_COMMON_LIBRARY_REPOSITORY_FORMAT": "npm",
+		"AWS_RESOURCES_COMMON_LIBRARY_REPOSITORY_NAME": "npm-library-store",
+		"NODE_VERSION": "18.x",
+		"S3_DEPLOY_BUCKET_REPOSITORY_NAME": "NA",
+		"S3_PACKAGE_DISTRIBUTION_FORMAT": "zip",
+		"S3_RELEASE_BUCKET_REPOSITORY_NAME": "node-releases-store-operation-mro-mro"
+	},
+	"cd-int": {
+		"AWS_REGION": "eu-west-1",
+		"S3_RELEASE_BUCKET_REPOSITORY_NAME": "node-releases-store-integration-operation-mro-mro",
+		"S3_PACKAGE_DISTRIBUTION_FORMAT": "zip",
+		"S3_DEPLOY_BUCKET_REPOSITORY_NAME": "server-s3-poc",		
+		"DEPLOYMENT_URL": "https://miweb-integration.com"
+	},
+	"cd-pre": {
+		"AWS_REGION": "eu-west-1",
+		"S3_RELEASE_BUCKET_REPOSITORY_NAME": "node-releases-store-preproduction-operation-mro-mro",
+		"S3_PACKAGE_DISTRIBUTION_FORMAT": "zip",
+		"S3_DEPLOY_BUCKET_REPOSITORY_NAME": "server-s3-poc",		
+		"DEPLOYMENT_URL": "https://miweb-preproduction.com"
+	},
+	"cd-prod": {
+		"AWS_REGION": "eu-west-1",
+		"S3_RELEASE_BUCKET_REPOSITORY_NAME": "node-releases-store-prodution-operation-mro-mro",
+		"S3_PACKAGE_DISTRIBUTION_FORMAT": "zip",
+		"S3_DEPLOY_BUCKET_REPOSITORY_NAME": "server-s3-poc",		
+		"DEPLOYMENT_URL": "https://miweb-production.com"
+	}
+}

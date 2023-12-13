@@ -1,0 +1,17 @@
+# Description: Pipeline to build a node application deploying in an s3 bucket aws service.
+# Version 1.0.0
+# Workflow Code: https://github.com/Iberia-Ent/software-engineering--workflow--node--ci--cd-s3--git-flow
+# Template Code: https://github.com/Iberia-Ent/software-engineering--node--ci--cd-s3--git-flow--template
+name: CICD_NODE_S3
+on: 
+  pull_request:  
+    branches: [ develop, staging ]
+    types:  [  opened, synchronize, reopened, closed ]
+  release:
+    types:
+      - created
+
+jobs:
+  NODE:
+    uses: Iberia-Ent/software-engineering--workflow--node--ci--cd-s3--git-flow/.github/workflows/ci-cd-node-s3.yml@v1.0
+    secrets: inherit
